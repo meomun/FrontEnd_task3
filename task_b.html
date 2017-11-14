@@ -1,0 +1,44 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Task B</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <h1>Form validation JavaScript</h1>
+
+    <form name="myForm" novalidate>
+        First name*: <br>
+        <input type="text" name="firstname" required><br>
+        Last name*: <br>
+        <input type="text" name="lastname" required><br>
+        Phone number:<br>
+        <input id="phone" type="tel" name="phone" pattern="^[+]358\d{9}$"><br>
+        Email*:<br>
+        <input id ="email" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required ><br>
+        Address: <br>
+        <input type="text" name="add"><br>
+        Postalcode: <br>
+        <input id="PO" type="text" name="Postcode" pattern="[0-9]{5}"><br>
+        Password*:<br>
+        <input id="pass" type="password" name="pass" required><br><br>
+        <input id="myBtn" type="submit"><br><br>
+        <p id="error"></p>
+        
+    </form>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>
